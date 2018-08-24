@@ -1,0 +1,66 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - #{$margin-top});
+  justify-content: center;
+}
+
+.error__title {
+  color: $foreground;
+  font-weight: 300;
+  margin-bottom: $size-xl;
+}
+
+.error__emoji {
+  display: block;
+  font-size: 8.2rem;
+  text-align: center;
+}
+
+.widget {
+  background: darken($blue, 10%);
+  margin-bottom: $size-xl;
+  max-width: 54rem;
+}
+
+.widget__header {
+  background: darken($blue, 15%);
+  color: lighten($blue, 20%);
+  display: flex;
+  font-weight: normal;
+  justify-content: space-between;
+  padding: $size-sm;
+  margin: 0;
+}
+
+.widget__message {
+  color: lighten($blue, 20%);
+  line-height: 1.5;
+  padding: 0 $size-sm;
+}
+
+.button {
+  background: darken($purple, 10%);
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 30%);
+  color: $foreground;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  background: darken($purple, 20%);
+}
+
+.button__link {
+  color: darken($purple, 50%);
+  display: block;
+  height: 100%;
+  padding: $size-sm;
+  width: 100%;
+}
+
+.button:hover .button__link {
+  color: lighten($purple, 10%);
+}

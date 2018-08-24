@@ -1,0 +1,14 @@
+.books {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 $size-xl 0;
+}
+
+.books__item {
+  flex: 0 0 18rem;
+  list-style: none;
+  padding: 1rem;
+}

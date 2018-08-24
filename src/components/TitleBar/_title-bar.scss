@@ -1,0 +1,17 @@
+.title-bar {
+  border-bottom: 1px solid lighten($background, 12%);
+  color: lighten($blue, 25%);
+  font-size: $size-md;
+  padding-bottom: $size-sm;
+  position: relative;
+}
+
+.title-bar:before {
+  border-bottom: 1px solid $background;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1px;
+}

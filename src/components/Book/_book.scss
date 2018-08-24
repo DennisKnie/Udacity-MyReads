@@ -1,0 +1,99 @@
+.book {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $size-lg;
+}
+
+.book__title {
+  color: $foreground;
+  font-size: $size-sm;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+.book__byline {
+  color: lighten($blue, 30%);
+  font-size: $size-sm;
+  margin: 0;
+  text-align: center;
+}
+
+.book-top {
+  position: relative;
+}
+
+.book-top__cover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem darken($blue, 15%);
+  transition: all 150ms ease-in-out;
+}
+
+.book-top__cover:hover {
+  box-shadow: 0 1rem 2rem darken($blue, 15%);
+  transform: scale(1.1);
+}
+
+.bookshelf-switcher {
+  bottom: -1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem darken($blue, 10%);
+  height: 5rem;
+  position: absolute;
+  right: -1rem;
+  width: 5rem;
+  transition: all 200ms ease-in-out;
+}
+
+.currentlyReading {
+  background: darken($orange, 10%);
+}
+
+.wantToRead {
+  background: darken($pink, 10%);
+}
+
+.read {
+  background: darken($cyan, 10%);
+}
+
+.none {
+  background: darken($purple, 10%);
+}
+
+.bookshelf-switcher:hover {
+  background: darken($purple, 20%);
+  transform: scale(1.1);
+}
+
+.bookshelf-switcher__icon {
+  color: darken($purple, 50%);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 200ms ease-in-out;
+}
+
+.bookshelf-switcher:hover .bookshelf-switcher__icon {
+  color: lighten($purple, 10%);
+}
+
+.bookshelf-switcher__menu {
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  font-size: 0;
+  height: 100%;
+  line-height: 0;
+  opacity: 0;
+  width: 100%;
+}
+
+.bookshelf-switcher__option {
+  color: $background;
+  font-size: $size-md;
+  line-height: 1.5;
+  opacity: 1;
+}

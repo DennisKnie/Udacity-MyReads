@@ -1,0 +1,34 @@
+.search {
+  bottom: 2.5rem;
+  position: fixed;
+  right: 2.5rem;
+}
+
+.search__button {
+  background: darken($green, 10%);
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem darken($blue, 10%);
+  display: block;
+  font-size: 0;
+  height: 6rem;
+  width: 6rem;
+  transition: all 200ms ease-in-out;
+}
+
+.search__button:hover {
+  background: darken($green, 40%);
+  transform: scale(1.1);
+}
+
+.search__icon {
+  color: darken($green,40%);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 200ms ease-in-out;
+}
+
+.search__button:hover .search__icon {
+  color: $green;
+}

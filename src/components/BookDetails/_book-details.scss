@@ -1,0 +1,53 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.book-details {
+  background: lighten($background, 10);
+  color: $foreground;
+  max-width: 54rem;
+  outline: none;
+  padding: $size-lg;
+  text-align: center;
+}
+
+.book-details__title {
+  text-align: left;
+  font-size: $size-lg;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.book-details__subtitle {
+  font-size: $size-md;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 $size-md 0;
+  text-align: left;
+}
+
+.book-details__description {
+  font-size: $size-sm;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0 0 $size-lg 0;
+}

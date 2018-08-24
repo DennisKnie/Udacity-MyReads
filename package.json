@@ -1,0 +1,28 @@
+{
+  "name": "my-reads",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-addons-update": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-feather": "^1.0.7",
+    "react-modal": "^2.3.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "react-spinners": "0.0.30"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,34 @@
+.header {
+  background: $background;
+  color: $foreground;
+  margin-bottom: $size-md;
+  padding: $size-md 0;
+}
+
+.logo {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+.logo__icon {
+  margin-right: $size-sm;
+  width: 5rem;
+}
+
+.logo__title {
+  align-items: center;
+  display: flex;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: $size-xl;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (min-width: $brk-lg) {
+  .header {
+    margin-bottom: $size-xl;
+  }
+}
